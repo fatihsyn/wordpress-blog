@@ -22,7 +22,6 @@ function Blog($atts){
 
          while ( $query->have_posts() ) :
              $query->the_post();
-             //$output .= '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
              $output .= '
              <article class="post-item">
                <a class="post-item__inner" href="'.get_permalink().'">
